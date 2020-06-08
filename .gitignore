@@ -1,0 +1,31 @@
+HELP.md
+target/
+!**/src/main/**
+!**/src/test/**
+out/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Java ###
+# Compiled class file
+*.class
+
+*.log
+
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+
