@@ -1,0 +1,21 @@
+package pl.martyna.designpatterns.proxy;
+
+public class ProxyImage implements Image {
+
+    private static RealImage realImage;
+    private String imageName;
+
+    public ProxyImage(String imageName){
+        this.imageName = imageName;
+    }
+
+    @Override
+    public void display() {
+
+        if(realImage == null) {
+            realImage = new RealImage(imageName);
+        }
+
+        realImage.display();
+    }
+}
